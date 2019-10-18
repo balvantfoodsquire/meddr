@@ -222,7 +222,8 @@ footer .footerul ul {
     justify-content: center;
     text-align: center;
     padding: 0 30px;
-     margin-left: 0px; 
+    margin-left: 0px;
+    margin-right: 0px;
 }
   .title {
     font-family: Lato-Regular;
@@ -250,6 +251,11 @@ footer .footerul ul {
     float: right;
     vertical-align: -webkit-baseline-middle;
     /*padding-top: 10px;*/
+}
+.mob{
+  height: 350px;
+    margin: auto;
+    display: block;
 }
 
 }
