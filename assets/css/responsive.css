@@ -235,6 +235,7 @@ footer .footerul ul {
     display: inline;
     align-items: center;
     margin-top: 30px;
+    padding: 0;
 }
 footer {
     background-image: url(../images/footer.png);
