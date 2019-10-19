@@ -257,5 +257,17 @@ footer .footerul ul {
     margin: auto;
     display: block;
 }
-
+.btn-search {
+    height: 47px;
+}
+.detail-div {
+     margin: 0 0; 
+}
+.contact-h2 {
+    font-family: Lato-Bold;
+    font-size: 25px;
+}
+.contact-deatil-ul {
+  margin-top: 10px;
+}
 }
