@@ -182,7 +182,10 @@ header{
     transition: width .3s;
 }
 
-
+.logo img{
+      width: 100px;
+    float: left;
+}
 
 .navbar-brand{
   font-family: Lato-Black;
@@ -593,4 +596,8 @@ footer .footerul ul li a:hover{
     height: 10px !important;
     
     background: #2658bf !important;
+}
+.footer-logo img{
+  width: 55px;
+    float: left;
 }
