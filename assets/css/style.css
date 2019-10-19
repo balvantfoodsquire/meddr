@@ -154,7 +154,7 @@ header{
   color: #fff !important;
 }
 .nav-item:last-child{
-  background-image: linear-gradient(to top, #54e0d0, #34aacf);
+  background-image: linear-gradient(to top,#34aacf,#54e0d0);
   width: 63%;
   align-items: center;
   align-self: center;
