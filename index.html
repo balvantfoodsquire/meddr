@@ -104,56 +104,64 @@
 		<div class="row icon-card">
 			<div class="col-lg-3 col-md-3 col-sm-6 col-12">
 				<div class="card cartDiv">
-					<img id="calendar" src="assets/images/calendar.png" class="d-block m-auto img-fluid">
+					<img id="calendar" src="assets/images/calendar.png" class=" m-auto img-fluid img-show">
+					<img id="calendar" src="assets/images/calendar1.png" class="m-auto img-fluid img-hide" >
 					<p class="text-center title">Calendar</p>
 					<p class="text-center desc">Organize calendar and <br>department roster</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-12">
 				<div class="card cartDiv ">
-					<img id="chat" src="assets/images/chat1.png" class="d-block m-auto img-fluid">
+					<img id="chat" src="assets/images/chat1.png" class="m-auto img-fluid img-show">
+					<img id="calendar" src="assets/images/chat.png" class="m-auto img-fluid img-hide" >
 					<p class="text-center title">Messaging</p>
 					<p class="text-center desc">Send messages to groups, <br>or community participants in events</p>
 				</div>					
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-12">
 				<div class="card cartDiv">
-					<img id="file-sharing" src="assets/images/file-sharing.png" class="d-block m-auto img-fluid">
+					<img id="file-sharing" src="assets/images/file-sharing.png" class=" m-auto img-fluid img-show">
+					<img id="file-sharing" src="assets/images/file-sharing1.png" class=" m-auto img-fluid img-hide">
 					<p class="text-center title">File Sharing</p>
 					<p class="text-center desc">Make communication more clear <br>and effective by file sharing</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-12">
 				<div class="card cartDiv">
-					<img id="easy-managment" src="assets/images/easy-managment.png" class="d-block m-auto img-fluid">
+					<img id="easy-managment" src="assets/images/easy-managment.png" class=" m-auto img-fluid img-show">
+					<img id="easy-managment" src="assets/images/easy-managment1.png" class=" m-auto img-fluid img-hide">
 					<p class="text-center title">Easy Management</p>
 					<p class="text-center desc">Automate work and become <br>more productive</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-12">
 				<div class="card cartDiv">
-					<img id="shared-news" src="assets/images/shared-news.png" class="d-block m-auto img-fluid">
+					<img id="shared-news" src="assets/images/shared-news.png" class=" m-auto img-fluid img-show">
+					<img id="shared-news" src="assets/images/shared-news1.png" class=" m-auto img-fluid img-hide">
 					<p class="text-center title">Shared News</p>
 					<p class="text-center desc">Enjoy reading magazines <br>and newspapers</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-12">
 				<div class="card cartDiv">
-					<img id="tracking" src="assets/images/tracking.png" class="d-block m-auto img-fluid">
+					<img id="tracking" src="assets/images/tracking.png" class="m-auto img-fluid img-show">
+					<img id="tracking" src="assets/images/tracking1.png" class="m-auto img-fluid img-hide">
 					<p class="text-center title">Tracking</p>
 					<p class="text-center desc">Keep track of your tasks <br>to achieve your goals.</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-12">
 				<div class="card cartDiv">
-					<img id="watch" src="assets/images/watch.png" class="d-block m-auto img-fluid">
+					<img id="watch" src="assets/images/watch.png" class="m-auto img-fluid img-show">
+					<img id="watch" src="assets/images/watch1.png" class="m-auto img-fluid img-hide">
 					<p class="text-center title">Sync with Smart Watch</p>
 					<p class="text-center desc">Extremely simple and easy <br>way access information</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-12">
 				<div class="card cartDiv">
-					<img id="update" src="assets/images/update.png" class="d-block m-auto img-fluid">
+					<img id="update" src="assets/images/update.png" class="m-auto img-fluid img-show">
+					<img id="update" src="assets/images/update1.png" class="m-auto img-fluid img-hide">
 					<p class="text-center title">Daily Update</p>
 					<p class="text-center desc">Daily updates are sent to users <br>at a scheduled time every day</p>
 				</div>
@@ -292,6 +300,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.js"></script>
 <script type="text/javascript">
 	
+
+$(document).ready(function() {
+ $('.img-hide').hide();
+
+//When the Image is hovered upon, show the hidden div using Mouseover
+ $('.cartDiv').hover(function() {
+ 	$(this).find('.img-hide').show();
+ 	$(this).find('.img-show').hide();
+  
+},function() {
+  
+  $(this).find('.img-hide').hide();
+ 	$(this).find('.img-show').show();
+});
+});
+
 $(document).ready(function() {
   $("#carousel").owlCarousel({
     navigation : false,
@@ -314,6 +338,7 @@ $(document).on("click", ".nav-item", function () {
     $(this).find('.nav-link').addClass('active');
     
 });
+
 
 </script>
 </body>

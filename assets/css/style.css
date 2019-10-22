@@ -338,13 +338,13 @@ body{
 .icon-card .card:hover .desc{
   color: #fff !important;
 }
-.icon-card .card:hover #chat {
+/*.icon-card .card:hover #chat {
     content: url('../images/chat.png');
-}
-.icon-card .card:hover #calendar {
+}*/
+/*.icon-card .card:hover #calendar {
     content: url('../images/calendar1.png');
-}
-.icon-card .card:hover #file-sharing {
+}*/
+/*.icon-card .card:hover #file-sharing {
     content: url('../images/file-sharing1.png');
 }
 .icon-card .card:hover #easy-managment {
@@ -361,7 +361,7 @@ body{
 }
 .icon-card .card:hover #tracking {
     content: url('../images/tracking1.png');
-}
+}*/
 
 
 .cartDiv .title{
